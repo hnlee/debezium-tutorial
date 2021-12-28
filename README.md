@@ -8,7 +8,7 @@ Uses the example configuration from the [Debezium tutorial](https://debezium.io/
 
 ## Installation
 
-Run `docker compose up` from the root of the project directory.
+Run `docker compose up --build` from the root of the project directory.
 
 Check to see if the connector is configured:
 
@@ -24,6 +24,7 @@ psql -h localhost -U postgres -d postgres -W
 
 (Substitute with actual database user, name, and password if necessary. Also make sure any local PostgreSQL server that may already be running on your system is stopped or do the appropriate port remapping to make sure you're connecting to the database server in the Docker container.)
 
+Run `docker compose down` to spin down the containers.
 
 ## Notes
 

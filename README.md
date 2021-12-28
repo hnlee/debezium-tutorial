@@ -33,5 +33,5 @@ psql -h localhost -U postgres -d postgres -W
 
 ## To Do
 
-[ ] Example Terraform for configuring AWS RDS and ECS
-[ ]
+- [ ] Example Terraform for configuring AWS RDS and ECS
+- [ ]

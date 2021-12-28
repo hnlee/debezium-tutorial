@@ -34,10 +34,10 @@ services:
       STATUS_STORAGE_TOPIC: my_connect_statuses
     depends_on:
       - kafka
-      - postgres
   app:
     build:
       context: .
       dockerfile: dockerfiles/app.Dockerfile
     depends_on:
+      - postgres
       - connect

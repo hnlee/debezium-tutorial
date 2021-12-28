@@ -15,7 +15,7 @@ POSTGRES_CONFIG='{
 
 echo "Waiting for Kafka Connect to start listening"
 while [ $(curl -s -o /dev/null -w %{http_code} http://connect:8083/connectors) -eq 000 ] ; do
-  echo -e $(date) " Kafka Connect listener HTTP state: " $(curl -s -o /dev/null -w %{http_code} http://connect:8083/connectors) " (waiting for 200)"
+  echo -e $(date) " Kafka Connect listener not yet available"
   sleep 5
 done
 
